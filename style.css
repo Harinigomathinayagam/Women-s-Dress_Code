@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0, #fce4ec);
+  min-height: 100vh;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #c2185b;
+}
+
+.tagline {
+  color: #880e4f;
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+  font-weight: 300;
+}
+
+main {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 0 1rem 3rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(194, 24, 91, 0.12);
+  animation: fadeIn 0.4s ease;
+}
+
+.card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #c2185b;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.occasion-btn, .body-btn {
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  border: 2px solid #f48fb1;
+  border-radius: 14px;
+  padding: 1rem 0.8rem;
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #880e4f;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: center;
+}
+
+.occasion-btn:hover, .body-btn:hover,
+.occasion-btn.active, .body-btn.active {
+  background: linear-gradient(135deg, #c2185b, #e91e8c);
+  color: #fff;
+  border-color: #c2185b;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(194, 24, 91, 0.3);
+}
+
+.back-btn {
+  margin-top: 1.5rem;
+  background: none;
+  border: 2px solid #f48fb1;
+  color: #c2185b;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.back-btn:hover {
+  background: #fce4ec;
+}
+
+.reset-btn {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  background: linear-gradient(135deg, #c2185b, #e91e8c);
+  border: none;
+  color: #fff;
+  padding: 0.55rem 1.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.reset-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+/* Results */
+.result-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.result-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #c2185b;
+}
+
+.result-header p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: #880e4f;
+  margin: 1.4rem 0 0.8rem;
+  border-left: 4px solid #f48fb1;
+  padding-left: 0.7rem;
+}
+
+.outfit-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.outfit-list li {
+  background: #fce4ec;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  font-size: 0.88rem;
+  color: #880e4f;
+  font-weight: 500;
+}
+
+.tips-box {
+  background: #fff8f9;
+  border: 1px dashed #f48fb1;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.shops-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.shop-card {
+  border: 1.5px solid #f48fb1;
+  border-radius: 14px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.shop-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(194, 24, 91, 0.15);
+}
+
+.shop-card .shop-icon {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.shop-card .shop-name {
+  font-weight: 600;
+  color: #c2185b;
+  font-size: 0.95rem;
+}
+
+.shop-card .shop-desc {
+  font-size: 0.78rem;
+  color: #888;
+  margin-top: 0.2rem;
+}
+
+.shop-card a {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: #e91e8c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.shop-card a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #c2185b;
+  font-size: 0.85rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 500px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+  .shops-grid { grid-template-columns: 1fr 1fr; }
+  .logo { font-size: 1.7rem; }
+}

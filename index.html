@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Women's Dress Code Guide</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <div class="logo">👗 StyleHer</div>
+    <p class="tagline">Your personal dress code & shopping guide</p>
+  </header>
+
+  <main>
+    <!-- Step 1: Occasion -->
+    <section class="card" id="occasion-section">
+      <h2>What's the occasion?</h2>
+      <div class="grid" id="occasion-grid">
+        <button class="occasion-btn" data-occasion="casual">☀️ Casual</button>
+        <button class="occasion-btn" data-occasion="office">💼 Office / Work</button>
+        <button class="occasion-btn" data-occasion="party">🎉 Party</button>
+        <button class="occasion-btn" data-occasion="wedding">💍 Wedding</button>
+        <button class="occasion-btn" data-occasion="date">❤️ Date Night</button>
+        <button class="occasion-btn" data-occasion="beach">🏖️ Beach</button>
+        <button class="occasion-btn" data-occasion="formal">🎭 Formal / Gala</button>
+        <button class="occasion-btn" data-occasion="gym">🏋️ Gym / Active</button>
+      </div>
+    </section>
+
+    <!-- Step 2: Body Type -->
+    <section class="card hidden" id="bodytype-section">
+      <h2>Your body type?</h2>
+      <div class="grid" id="bodytype-grid">
+        <button class="body-btn" data-body="hourglass">⌛ Hourglass</button>
+        <button class="body-btn" data-body="pear">🍐 Pear</button>
+        <button class="body-btn" data-body="apple">🍎 Apple</button>
+        <button class="body-btn" data-body="rectangle">📏 Rectangle</button>
+        <button class="body-btn" data-body="inverted-triangle">🔺 Inverted Triangle</button>
+      </div>
+      <button class="back-btn" id="back-to-occasion">← Back</button>
+    </section>
+
+    <!-- Step 3: Results -->
+    <section class="card hidden" id="results-section">
+      <div id="results-content"></div>
+      <button class="back-btn" id="back-to-body">← Back</button>
+      <button class="reset-btn" id="reset-btn">Start Over</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ for every woman's style journey</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
